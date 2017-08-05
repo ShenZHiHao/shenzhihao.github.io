@@ -1,0 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.top{
+    width: 70%;
+    height: 300px;
+    margin: 0px auto;
+}
