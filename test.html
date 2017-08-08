@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TestPage</title>
+</head>
+<body>
+<button id="btn1">按钮</button>
+<script>
+    document.getElementById("btn1").addEventListener("click",showType)
+    function showType(event) {
+        alert(event.type)
+        alert(event.target)
+    }
+</script>
+</body>
+</html>
