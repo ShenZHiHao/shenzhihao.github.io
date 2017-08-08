@@ -3,36 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <title>申智好的blog</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="styleForPc.css" media="only screen and (min-width:1000px)">
+    <link rel="stylesheet" type="text/css" href="styleForPad.css" media="only screen and (max-width:1000px)">
 </head>
 <body>
-
 <div class="top">
-    <div class="title">
-        <ul class="title">
-            <li><a class="title" href="index.html">首页内容</a></li>
-            <li><a class="title" href="intro.html">博主信息</a></li>
-            <li><a class="title" href="review.html">往期回顾</a></li>
-        </ul>
-        <audio src="mp3/shapeOfYou.mp3" controls="controls"></audio>
-        <div class="photo">
-            <img width="200px" height="200px" src="img/head.jpg">
+    <div class="top_container">
+        <div class="top_left">
+            <div class="top_left1">
+                <h1 class="blog_name">申智好</h1><br/>
+                <h2 class="blog_name">的个人blog</h2>
+            </div>
+            <div class="top_left2">
+                <audio class="audio" src="mp3/shapeOfYou.mp3" controls="controls">音乐播放</audio>
+            </div>
+        </div>
+        
+        <div class="top_right">
+            <ul class="index">
+                <li>
+                    <a class="link" href="index.html">首页</a>
+                </li>
+                <li>
+                    <a class="link" href="Review.html">往期</a>
+                </li>
+            </ul>
         </div>
     </div>
-    
 </div>
 
 <div class="body">
-    <div body_content>
-        
-    </div>
-    <div body_intro>
-        
+    <div class="body_blank"></div>
+    <div class="body_container">
+        <div class="content_articles">
+            <h1 class="conten_title1" align="center"><b>文章</b></h1>
+            <h1 align="center">========================</h1><br/>
+            <ul>
+                <li>
+                    <div class="article">
+                        <img width="380" height="200" src="img/github.jpg" alt="github_intro">
+                        <p class="article_title"><a class="a_article_title" href="html/article1.html">用Github搭建自己的blog</a></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="article">
+                    </div>
+                </li>
+                <li>
+                    <div class="article">
+                    </div>
+                </li>
+            </ul>            
+        </div>
+        <div class="content_articles">
+            <h1 class="conten_title1" align="center"><b>闲谈</b></h1>
+            <h1 align="center">========================</h1><br/>
+            <ul>
+                <li>
+                    <div class="article">
+                    </div>
+                </li>
+                <li>
+                    <div class="article">
+                    </div>
+                </li>
+                <li>
+                    <div class="article">
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 
 <div class="footing">
-    
 </div>
+
 </body>
 </html>

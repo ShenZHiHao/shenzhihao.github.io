@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.top,.footing{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+}
+.body{
+    width: 100%;
+    height: 2000px;
+    background:url(img/qianxun.jpg) no-repeat fixed 0px 0px;
+    background-size: 100% 100%;
+}
+.top_container{
+    width: 80%;
+}

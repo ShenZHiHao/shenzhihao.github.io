@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.top,.footing{
+    width: 100%;
+    height: 150px;
+    background-color: #000000;
+}
+.body{
+    width: 100%;
+    height: 1500px;
+    background:url(img/qianxun.jpg) no-repeat fixed 0px 0px;
+    background-size: 100% 100%;
+}
+.top_container{
+    height: 150px;
+    margin: 0px auto;
+    width: 65%;
+}
+.top_left{
+    float: left;
+    padding-top: 30px;
+    width: 80%;
+    color: #ff0900;
+}
+.blog_name{
+    font-family: 微软雅黑;
+}
+.top_left1{
+    float: left;
+    width: 30%;
+}
+.top.left2{
+    float: left;
+    width: 70%;
+}
+.audio{  
+    margin-top: 30px;
+}
+.top_right{
+    float: left;
+    padding-top: 100px;
+    font-family: "Adobe Arabic";
+    font-size: 25px;
+    width: 20%;
+    color: rgba(254, 255, 123, 0.51);
+}
+.index{
+}
+li{
+    display: inline;
+}
+.link{
+    font-weight: 600;
+    padding-left: 40px;
+}
+a:link,a:visited{
+    text-decoration: none;
+    cursor: inherit;
+    color: rgba(254, 255, 123, 0.51);
+}
+a:hover,a:active{
+    cursor: hand;
+    color: #fdff46;
+}
+.body_blank{
+    height: 100px;
+}
+.body_container{
+    margin:0px auto;
+    width:66%;
+}
+.conten_title1{
+    font-family: 微软雅黑;
+    font-size: 40px;
+    color: #ff003b;
+}
+.article{
+    margin-bottom: 30px;
+    margin-left: 20px;
+    text-align: center;
+    float: left;
+    width: 390px;
+    height: 240px;
+}
+.article_title{
+    font-family: 微软雅黑;
+    font-size: 25px;
+    font-weight: 800;
+    color: #ff003b;
+}
+a:link,a:visited{
+    text-decoration: none;
+    cursor: inherit;
+    color: rgba(255, 14, 9, 0.51);
+}
+a:hover,a:active{
+    cursor: hand;
+    color: #ff0725;
