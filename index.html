@@ -14,18 +14,7 @@
             <li><a class="title" href="intro.html">博主信息</a></li>
             <li><a class="title" href="review.html">往期回顾</a></li>
         </ul>
-        <button onclick="controler()">播放/暂停背景音乐</button>
-        <audio id="audio" src="mp3/shapeOfYou.mp3" ></audio>
-        <script>
-            var a = document.getElementById("audio")
-            function controler(){
-                if(a.paused){
-                    a.play();
-                }else {
-                    a.pause();
-                }
-            }
-        </script>
+        <audio src="mp3/shapeOfYou.mp3" controls="controls"></audio>
         <div class="photo">
             <img width="200px" height="200px" src="img/head.jpg">
         </div>
