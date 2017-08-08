@@ -5,13 +5,19 @@
     <title>TestPage</title>
 </head>
 <body>
-<button id="btn1">按钮</button>
+<p name="pn">Hello</p>
+
+<ul id="ul1">
+    <li>world</li>
+    <li>how</li>
+    <li>much</li>
+</ul>
+
 <script>
-    document.getElementById("btn1").addEventListener("click",showType)
-    function showType(event) {
-        alert(event.type)
-        alert(event.target)
-    }
+    function getChildNode(){
+        var ul1 = document.getElementById("ul1");
+        ul1.removeChild(ul1.childNodes[1]);
+    } 
 </script>
 </body>
 </html>
