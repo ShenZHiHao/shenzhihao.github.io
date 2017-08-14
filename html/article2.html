@@ -3,105 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>申智好的blog</title>
-    <link rel="stylesheet" type="text/css" href="/shenzhihao.github.io/style.css">
-    <script>
-        var sort_mt_list = ["冒泡排序","快速排序","直接选择","堆排序","直接插入","希尔排序","归并排序"];
-        var sort_m = 1;
-        function get_sort_mt() {
-            var sort_list = document.getElementsByName("sort_mt");
-            for (i = 0; i < sort_list.length; i++) {
-                if (sort_list[i].checked) {
-                    sort_m = sort_list[i].value;
-                }
-            }
-            document.getElementById("selected_sort_mt").innerHTML= sort_mt_list[sort_m-1];
-        }
-    </script>
-    <script>
-        var input_mt_list = ["输入数据个数","逐个输入数据"];
-        var input_m = 1;
-        function get_input_mt() {
-            var input_list = document.getElementsByName("input_mt");
-            for (i = 0; i < input_list.length; i++) {
-                if (input_list[i].checked) {
-                    input_m = input_list[i].value;
-                }
-            }
-            document.getElementById("selected_input_mt").innerHTML= input_mt_list[input_m-1];
-        }
-    </script>
-    <script>
-        var inputting_num = null;
-        var inputted_list = [];
-        function add_num(num){
-            if(inputting_num == null){
-                inputting_num = num;
-            }else {
-                inputting_num += num;
-            }
-            document.getElementById("date_display").innerHTML=inputting_num;
-        }
-        function add_to_list() {
-            if(input_m == 1){
-                inputted_list = [];
-                if(inputting_num != null) {
-                    inputted_list[0]= inputting_num;
-                }
-            }else{
-                if(inputting_num != null) {
-                    inputted_list.push(inputting_num);
-                }
-            }
-            if(inputting_num != null || inputted_list != []){
-                document.getElementById("date_display").innerHTML = "";
-                document.getElementById("inputted_date").innerHTML = inputted_list;
-            }else{
-                document.getElementById("inputted_date").innerHTML = "无数据";
-            }
-            inputting_num = null;
-        }
-        function delete_last_input() {
-            if (input_m == 1) {
-                inputted_list = [];
-            } else {
-                if (inputted_list != []) {
-                    var len = inputted_list.length;
-                    var inputted_list1 = inputted_list.splice(0, len - 1);
-                    inputted_list = inputted_list1;
-                }
-            }
-            if(inputted_list){
-                document.getElementById("inputted_date").innerHTML = inputted_list;
-            }else{
-                document.getElementById("inputted_date").innerHTML = "无数据";
-            } 
-        }
-        
-        var perform_status = false;
-        function perform_view() {
-            if(input_m == 1){
-                if(inputted_list[0] > 30){
-                    document.getElementById("perform_status").innerHTML="数据量过多，重新输入>-<";
-                }else{
-                    document.getElementById("perform_status").innerHTML="序列自动生成，即将开始演示^-^"
-                    var real_list = [];
-                    for(i = 0 ;i <inputted_list[0]; i++) {
-                        real_list.push(Math.round(250*Math.random()))
-                    }
-                    inputted_list = real_list;
-                    perform_status = true;
-                }
-            }else{
-                if(inputted_list.length > 30){
-                    document.getElementById("perform_status").innerHTML="数据量过多，重新输入>-<";
-                }else{
-                    document.getElementById("perform_status").innerHTML="即将开始演示^-^";
-                    perform_status = true;
-                }
-            }
-            document.getElementById("inputted_date").innerHTML = inputted_list;
-        }
-    </script>
+    <link rel="stylesheet" type="text/css" href="/shenzhihao.github.io/css/article2.css">
+    <script src="/shenzhihao.github.io/js/article2.js"></script>
 </head>
 <body>
 <div class="top">
@@ -112,7 +15,7 @@
         </div>
         <div class="top_mid">
             <p class="bgm_title">BGM:The Shape of You</p><br/>
-            <audio class="audio" src="mp3/shapeOfYou.mp3" controls="controls">音乐播放</audio>
+            <audio class="audio" src="/shenzhihao.github.io/mp3/shapeOfYou.mp3" controls="controls">音乐播放</audio>
         </div>
         <div class="top_right">
             <ul class="index">
@@ -126,81 +29,60 @@
         </div>
     </div>
 </div>
-
-<div class="article2_body">
-    <div class="body_blank"></div>
+<div class="body">
     <div class="body_container">
-        <div class="content_articles">
-            <h1 class="content_title1" align="center"><b>几种排序算法图解</b></h1><br/>
-            <p class="p1_article2">排序算法的学习是数据结构与算法学习中的重要一环，涉及了在综合考虑计算空间与时间需求下的最优解问题。如图展示了几种常见算法的特性对比分析：</p><br/>
-            <div align="center">
-                <img class="article2_img1" src="/shenzhihao.github.io/img/sort.jpg" alt="github_intro">
-            </div><br/>
-            <p class="p1_article2">1.请选择希望演示的排序算法：</p>
-            <form class="form_sort">
-                <br/>交换排序：<br/>
-                冒泡排序<input type="radio" name="sort_mt" value="1" checked="true">
-                快速排序<input type="radio" name="sort_mt" value="2">
-                <br/>选择排序：<br/>
-                直接选择<input type="radio" name="sort_mt" value="3">
-                堆排序<input type="radio" name="sort_mt" value="4">
-                <br/>插入排序：<br/>
-                直接插入<input type="radio" name="sort_mt" value="5">
-                希尔排序<input type="radio" name="sort_mt" value="6">
-                <br/>
-                归并排序<input type="radio" name="sort_mt" value="7">
-            </form>
-            <br/>
-            <button name="submit" onclick="get_sort_mt()">确定</button><br/>
-            <p class="p1_article2">请确认您选择的排序方式为：</p>
-            <p class="p1_article2" id="selected_sort_mt">冒泡排序</p>
-            <br/><br/>            
-            <p class="p1_article2">2.请选择数据输入方式：(为能在页面中演示出较好的动画效果，请将数据量控制在30之内)</p>
-            <form class="form_sort">
-                <br/>输入数据个数<input type="radio" name="input_mt" value="1" checked="true">
-                <br/>逐个输入数据<input type="radio" name="input_mt" value="2">
-            </form>
-            <br/>
-            <button name="submit" onclick="get_input_mt()">确定</button><br/>
-            <p class="p1_article2">请确认您选择的数据输入方式为：</p>
-            <p class="p1_article2" id="selected_input_mt">输入数据个数</p>
-            <br/><br/>
-            <p class="p1_article2">3.请进行数据输入<br/>例一：输入数据个数<br/>20->添加->演示（自动生成含有20个正整数的无序序列）<br/>例二：逐个输入数据<br/>15->添加->12->添加->···->演示<br/>例三：回退<br/>逐个输入数据：回退表示删除已输入数据的最后一个数<br/>输入数据个数：回退表示重新输入数据个数</p><br/>
-            <div>
-                <button id="date_display">数据输入框</button><br/>
-                <div class="computer">
-                    <button class="key_num" onclick="add_num('1')">1</button>
-                    <button class="key_num" onclick="add_num('2')">2</button>
-                    <button class="key_num" onclick="add_num('3')">3</button>
-                    <button class="key_num" onclick="add_num('4')">4</button>
-                    <button class="key_num" onclick="add_num('5')">5</button>
-                    <button class="key_num" onclick="add_num('6')">6</button>
-                    <button class="key_num" onclick="add_num('7')">7</button>
-                    <button class="key_num" onclick="add_num('8')">8</button>
-                    <button class="key_num" onclick="add_num('9')">9</button>
-                    <button class="key_num" onclick="add_num('0')">0</button>
-                    <button class="key_num" onclick="add_to_list()">添加</button>
-                    <button class="key_num" onclick="delete_last_input()">回退</button>
-                    <button class="key_num" onclick="perform_view()">演示</button>
-                </div>
-            </div>
-            <div>
-                <p id="inputted_date">已经输入的数据</p>
-            </div><br/>          
-            <div>
-                <p id="perform_status">演示执行状态</p>
-            </div><br/>
-
-            <div id="animation">
-                
-            </div>
-            <br/><br/>
+        <p class="title">几种排序算法图解</p><br/>
+        <p class="p1">排序算法的学习是数据结构与算法学习中的重要一环，涉及了在综合考虑计算空间与时间需求下的最优解问题。如图展示了几种常见算法的特性对比分析：</p>
+        <p class="p_img1">
+            <img class="img1" src="/shenzhihao.github.io/img/sort.jpg" alt="github_intro">
+        </p><br/>
+        <p class="p1">1.现以其中三种排序为例进行动画展示，请选择希望演示的排序算法：</p><br/>
+        <form class="form1">
+            冒泡排序<input type="radio" name="sort_mt" value="1" checked="true"><br/>
+            选择排序<input type="radio" name="sort_mt" value="2"><br/>
+            插入排序<input type="radio" name="sort_mt" value="3"><br/>
+        </form><br/>
+        <button class="submit" onclick="get_sort_mt()">确定</button>
+        <p class="p1">请确认您选择的排序方式为：</p><br/>
+        <p class="p2" id="selected_sort_mt">冒泡排序</p><br/>            
+        <p class="p1">2.请选择数据输入方式：(为能在页面中演示出较好的动画效果，请将数据量控制在20之内，数值控制在100以内)</p><br/>
+        <form class="form2">
+            输入数据个数<input type="radio" name="input_mt" value="1" checked="true">
+            <br/>逐个输入数据<input type="radio" name="input_mt" value="2">
+        </form><br/>
+        <button class="submit" onclick="get_input_mt()">确定</button>
+        <p class="p1">请确认您选择的数据输入方式为：</p><br/>
+        <p class="p2" id="selected_input_mt">输入数据个数</p>
+        <br/>
+        <p class="p1">3.请进行数据输入<br/>例一：输入数据个数<br/>20->添加->演示（自动生成含有20个正整数的无序序列）<br/>例二：逐个输入数据<br/>15->添加->12->添加->···->演示<br/>例三：回退<br/>逐个输入数据：回退表示删除已输入数据的最后一个数<br/>输入数据个数：回退表示重新输入数据个数</p>
+        <p id="date_display">数据输入框</p>
+        <div class="computer">
+            <button class="key_num" onclick="add_num('1')">1</button>
+            <button class="key_num" onclick="add_num('2')">2</button>
+            <button class="key_num" onclick="add_num('3')">3</button>
+            <button class="key_num" onclick="add_num('4')">4</button>
+            <button class="key_num" onclick="add_num('5')">5</button>
+            <button class="key_num" onclick="add_num('6')">6</button>
+            <button class="key_num" onclick="add_num('7')">7</button>
+            <button class="key_num" onclick="add_num('8')">8</button>
+            <button class="key_num" onclick="add_num('9')">9</button>
+            <button class="key_num" onclick="add_num('0')">0</button>
+            <button class="key_num" onclick="add_to_list()">添加</button>
+            <button class="key_num" onclick="delete_last_input()">回退</button>
+            <button class="key_num_l" onclick="perform_status_check()">检查/更新</button>
         </div>
+        <div id="data_displayer">
+            <p class="p2" id="inputted_data">已经输入的数据</p><br/>
+        </div>
+        <p class="p2" id="perform_status">演示执行状态</p><br/>
+        <button class="submit" onclick="perform_start()">播放</button>
+        <button class="submit" onclick="perform_pause()">暂停</button>
+        <br/><br/>
+        <div id="ani"></div>
+        <br/><br/>
     </div>
 </div>
-
 <div class="footing">
 </div>
-
 </body>
 </html>

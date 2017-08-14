@@ -3,7 +3,7 @@
     padding: 0px;
 }
 body{
-    background:url("img/wood2.jpg") fixed 0px 0px;
+    background:url("../img/wood2.jpg") fixed 0px 0px;
 }
 a:link,a:visited{
     text-decoration: none;
@@ -21,14 +21,13 @@ a:hover,a:active {
         height: 150px;
         background-color: rgb(0, 0, 0);
     }
+    .body{
+        margin-top: 20px;
+        width: 70%;
+    }
     .top_container{
         width: 80%;
         height: 150px;
-    }
-    .body{
-        margin-top: 10px;
-        width: 80%;
-        height: 2000px;
     }
     .top_left{
         text-align: center;
@@ -64,23 +63,10 @@ a:hover,a:active {
         display: inline;
         margin-right: 20px;
     }
-    
-    .body_left{
-        float: left;
-        width: 20%;
-        height: 1000px;
-        border: dashed;
-    }
-    .body_mid{
-        float: left;
-        width: 56%;
-        margin: 0px 1%;
-        background-color: rgba(196, 255, 0, 0.38);
-    }
-    .body_right{
-        float: left;
-        width: 20%;
-        height: 1000px;
+    .body_container{
+        margin: 0px auto;
+        width: 70%;
+        min-height: 1000px;
         border: dashed;
     }
     .article{
@@ -99,13 +85,30 @@ a:hover,a:active {
         color: #ff003b;
         margin-top: 55%;
     }
-
     .article_img{
         position: absolute;
         width: 100%;
         height: 80%;
         top: 0;
         left: 0;
+    }
+    #ani{
+        width: 100%;
+        min-height: 200px;
+        background-color: rgba(0, 255, 33, 0.27);
+    }
+    .title{
+        font-size: 40px;
+        font-family: 微软雅黑;
+        font-weight: 800;
+        color: #0000af;
+        text-align: center;
+    }
+    .p1{
+        font-size: 25px;
+        font-family: 微软雅黑;
+        font-weight: 500;
+        color: #00ff44;
     }
 }
 /*media 2ed*/
@@ -116,15 +119,13 @@ a:hover,a:active {
         height: 150px;
         background-color: #000000;
     }
+    .body{
+        margin-top: 50px;
+        width: 70%;
+    }
     .top_container {
         width: 900px;
         height: 150px;
-    }
-    .body{
-        clear: left;
-        margin: 0px auto;
-        width: 900px;
-        height: 2000px;
     }
     .top_left{
         text-align: center;
@@ -164,20 +165,14 @@ a:hover,a:active {
         margin-left: 20px;
     }
 
-    .body_left{
-        float: left;
-        width: 30%;
-        height: 1000px;
-        border: dotted;
+    .body_container{
+        width: 100%;
+        min-height: 1000px;
+        border: dashed;
     }
-    .body_mid{
-        float: left;
-        width: 67%;
-        margin: 0px 1%;
-        background-color: rgba(196, 255, 0, 0.38);
-    }
-    .body_right{
-        display: none;
+    .img1{
+        width: 60vw;
+        height: 40vw;
     }
     .article{
         float: left;
@@ -203,6 +198,24 @@ a:hover,a:active {
         top: 0;
         left: 0;
     }
+    #ani{
+        width: 100%;
+        min-height: 300px;
+        background-color: rgba(0, 255, 33, 0.27);
+    }
+    .title{
+        font-size: 40px;
+        font-family: 微软雅黑;
+        font-weight: 800;
+        color: #0000af;
+        text-align: center;
+    }
+    .p1{
+        font-size: 25px;
+        font-family: 微软雅黑;
+        font-weight: 500;
+        color: #00ff44;
+    }
 }
 /*media 3ed*/
 @media screen and (max-width: 900px){
@@ -212,14 +225,13 @@ a:hover,a:active {
         height: 120px;
         background-color: #000000;
     }
-    .top_container {
-        width: 600px;
-        height: 150px;
-    }
     .body{
-        margin: 0px auto;
-        width: 600px;
-        height: 2000px;
+        margin-top: 20px;
+        width: 70%;
+    }
+    .top_container {
+        width: 100%;
+        height: 150px;
     }
     .top_left{
         text-align: center;
@@ -228,12 +240,12 @@ a:hover,a:active {
         float: left;
         color: #ff003b;
         font-weight: 800;
-        font-size: 30px;
+        font-size: 25px;
         line-height: 20px;
     }
     .top_mid{
         float: left;
-        width: 68%;
+        width: 60vw;
         margin: 0px 1%;
         padding-top: 20px;
         color: #ff003b;
@@ -241,11 +253,11 @@ a:hover,a:active {
         line-height: 10px;
     }
     .audio{
-        width: 99%;
+        width: 60vw;
     }
     .top_right{
         float: left;
-        width: 68%;
+        width: 60vw;
         margin: 10px 1%;
         color: #ff003b;
         font-size: 20px;
@@ -257,17 +269,10 @@ a:hover,a:active {
         margin-left: 0px;
         margin-right: 40px;
     }
-    .body_left{
-        display: none;
-    }
-    .body_mid{
-        float: left;
+    .body_container{
         width: 100%;
-        margin: 10px 0;
-        background-color: rgba(196, 255, 0, 0.38);
-    }
-    .body_right{
-        display: none;
+        min-height: 1300px;
+        border: dashed;
     }
     .article{
         float: left;
@@ -285,74 +290,90 @@ a:hover,a:active {
         color: #ff003b;
         margin-top: 60%;
     }
-    .article_img{
+    .article_img {
         position: absolute;
         width: 100%;
         height: 80%;
         top: 0;
         left: 0;
     }
+    #ani{
+        width: 100%;
+        min-height: 600px;
+        background-color: rgba(0, 255, 33, 0.27);
+    }
+    .title{
+        font-size: 25px;
+        font-family: 微软雅黑;
+        font-weight: 800;
+        color: #0000af;
+        text-align: center;
+    }
+    .p1{
+        font-size: 18px;
+        font-family: 微软雅黑;
+        font-weight: 500;
+        color: #00ff44;
+    }
 }
-
-
-
-.p1_article2{
-    font-size: 25px;
+.p_img1{
+    text-align: center;
+}
+.form1,.form2{
+    font-size: 24px;
     font-family: 微软雅黑;
-    font-weight: 500;
-    color: #00ff09;
-}
-.form_sort{
-    font-size: 32px;
-    font-family: 华文新魏;
     font-weight: 600;
     color: aqua;
 }
 [name="sort_mt"],[name="input_mt"]{
-    width: 60px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
 }
-[name="submit"]{
-    width: 80px;
-    height: 54px;
+.submit{
+    width: 150px;
+    height: 40px;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
 }
 .computer{
-    width: 300px;
-    height: 370px;
+    margin-left: 0px;
+    width: 270px;
+    height: 230px;
 }
 .key_num{
-    margin-right: 20px;
-    margin-bottom: 20px;
-    font-size: 30px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-size: 25px;
     float: left;
     width: 80px;
-    height: 54px;
+    height: 40px;
+}
+.key_num_l{
+    margin-right: 10px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    float: left;
+    width: 170px;
+    height: 40px;
+}
+.p2{
+    margin-left: 0px;
+    font-size: 25px;
+    color: black;
+    width: 260px;
+    min-height: 40px;
+    background-color: rgb(254, 251, 255);
 }
 #date_display{
+    margin: 10px 0px;
     text-align: right;
-    font-size: 30px;
-    margin-bottom: 20px;
-    width: 280px;
-    height: 54px;
+    font-size: 25px;
+    color: #000000;
+    width: 260px;
+    height: 40px;
+    background-color: rgb(254, 251, 255);
 }
-#inputted_date{
-    width: 100%;
-    min-height: 54px;
-    line-height: 54px;
-    font-size: 30px;
-    background-color: azure;
-}
-#perform_status{
-    width: 100%;
-    min-height: 54px;
-    line-height: 54px;
-    font-size: 30px;
-    background-color: azure;
-}
-#animation{
-    width: 100%;
-    height: 600px;
-    background-color: rgba(255, 9, 0, 0.62);
+#data_displayer{
+    margin-left: 0px;
+    width: 260px;
 }
