@@ -108,7 +108,7 @@ a:hover,a:active {
         font-size: 25px;
         font-family: 微软雅黑;
         font-weight: 500;
-        color: #00ff44;
+        color: #000000;
     }
 }
 /*media 2ed*/
@@ -214,7 +214,7 @@ a:hover,a:active {
         font-size: 25px;
         font-family: 微软雅黑;
         font-weight: 500;
-        color: #00ff44;
+        color: #000000;
     }
 }
 /*media 3ed*/
@@ -313,7 +313,7 @@ a:hover,a:active {
         font-size: 18px;
         font-family: 微软雅黑;
         font-weight: 500;
-        color: #00ff44;
+        color: #000000;
     }
 }
 .p_img1{
@@ -323,7 +323,7 @@ a:hover,a:active {
     font-size: 24px;
     font-family: 微软雅黑;
     font-weight: 600;
-    color: aqua;
+    color: #0000af;
 }
 [name="sort_mt"],[name="input_mt"]{
     width: 20px;
