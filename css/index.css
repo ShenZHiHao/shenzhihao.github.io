@@ -3,7 +3,7 @@
     padding: 0px;
 }
 body{
-    background:url("../img/wood2.jpg") fixed 0px 0px;
+    background:url("../img/background1.jpg") fixed 0px 0px;
 }
 a:link,a:visited{
     text-decoration: none;
@@ -33,12 +33,12 @@ a:hover,a:active {
     .top_left{
         text-align: center;
         width: 20%;
-        margin-top: 35px;
+        margin-top: 50px;
         float: left;
         color: #ff003b;
         font-weight: 800;
-        font-size: 35px;
-        line-height: 30px;
+        font-size: 50px;
+        line-height: 50px;
     }
     .top_mid{
         width: 58%;
