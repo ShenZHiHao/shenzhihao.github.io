@@ -43,7 +43,7 @@ a:hover,a:active {
     float: left;
     color: #ff003b;
     font-weight: 900;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 50px;
 }
 .blog_name{
@@ -51,11 +51,11 @@ a:hover,a:active {
 }
 .top_right{
     margin-top: 35px;
-    margin-left: 10px;
+    margin-left: 30px;
     float: left;
 }
 .audio{
-    margin-left: 30px;
+    margin-left: 10px;
 }
 /*media 1st*/
 @media screen and (min-width: 1150px){
