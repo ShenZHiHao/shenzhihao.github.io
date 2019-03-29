@@ -1,5 +1,11 @@
+##多人合作
 git status
 git pull
 git add .
 git commit -m 'Notations'
 git push origin master
+
+##单人
+git add .
+git commit -m 'Notations'
+git push -u origin master
