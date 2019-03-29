@@ -1,0 +1,5 @@
+#!/bin/bash
+
+git add .
+git commit -m 'Notations'
+git push -u origin master

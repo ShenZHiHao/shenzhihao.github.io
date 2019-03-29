@@ -17,11 +17,13 @@
 @media screen and (min-width: 1200px){
     .body {
         width: 1100px;
+        min-height: 1700px
     }
 }
 /*media 2ed*/
 @media screen and (max-width: 1400px){
     .body {
         width: 800px;
+        min-height: 1700px
     }
 }
