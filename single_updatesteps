@@ -1,8 +1,5 @@
 #!/bin/bash
 
-git config --global user.name "shenzhihao"  
-git config --global user.email "1295938565@qq.com"
-
 git add .
 git commit -m 'Notations'
 git push -u origin master

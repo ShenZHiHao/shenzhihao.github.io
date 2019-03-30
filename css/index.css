@@ -1,17 +1,17 @@
 ﻿.Tag_link:link,.Tag_link:visited{
     cursor: inherit;
-    color: rgba(255, 0, 5, 0.8);
+    color: rgba(255, 255, 255, 1);
 }
 .Tag_link:hover,.Tag_link:active {
     cursor: hand;
-    color: rgba(255, 0, 5, 0.8);
-    margin-left: 12px;
+    color: rgba(0, 0, 0, 1);
+    margin-left: 5px;
 }
 .body_left{
     float: left;
     width: 200px;
     height: 500px;
-    background-color: rgba(134, 133, 133, 0.87);
+    background-color: rgba(192, 192, 192, 1);
     margin-top: 10px;
     margin-bottom: 20px;
     border-radius: 20px;
@@ -29,7 +29,7 @@
 }
 .Tag_name{
     font-size: 30px;
-    color: #0000af;
+    color: rgba(0,0,0,1);
     margin-bottom: 20px;
 }
 .Tag_link{
