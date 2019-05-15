@@ -1,3 +1,8 @@
+##
+single_update_steps为Ubuntu端执行文件
+##windows端
+进入blog文件夹F:\Git\myblog\shenzhihao.github.io，右键git bash here
+
 ##多人合作
 git status
 git pull
