@@ -1,0 +1,124 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+}
+body{
+    background-position: 0px 0px;
+    background-image: url("../img/background2.jpg");
+    background-attachment: fixed;
+}
+a:link,a:visited{
+    cursor: inherit;
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+}
+a:hover,a:active {
+    cursor: hand;
+    color: rgba(0,0,0,1);
+}
+.head{
+    width: 100%;
+    height: 40px;
+    background-color: rgba(220,220,220,1);
+}
+.head_container{
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: 800;
+}
+.index_li{
+    display: inline;
+    margin-right: 50px;
+}
+.top{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(25, 25, 25,1);
+}
+.top_container{
+    height: 100px;
+}
+.top_left{
+    width: 200px;
+    height: 70px;
+    margin-top: 10px;
+    padding-top: 20px;
+    float: left;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+}
+.blog_name{
+    font-family: Arial;
+}
+.top_right{
+    margin-top: 10px;
+    margin-left: 30px;
+    float: left;
+}
+.audio {
+/*    width: 300px;  */
+    height: 30px;
+    margin-top: 25px;
+}
+.audio_content
+{
+    width: 500px;  
+    height: 30px;
+    margin-top: 10px;
+}
+/*media 1st*/
+@media screen and (min-width: 1150px){
+    .head_container{
+        width: 1100px;
+    }
+    .top_container{
+        width: 1100px;
+    }
+    .top_right{
+        width: 860px;
+        height: 90px;
+    }
+    .audio{
+        width: 840px;
+    }
+    .footing_container{
+        width: 1100px;
+    }
+}
+/*media 2ed*/
+@media screen and (max-width: 1150px) {
+    .head_container {
+        width: 800px;
+    }
+    .top_container{
+        width: 800px;
+    }
+    .top_right{
+        width: 560px;
+    }
+    .audio{
+        width: 520px;
+    }
+    .footing_container{
+        width: 800px;
+    }
+}
+.footing{
+    clear: both;
+    width: 100%;
+    height: 110px;
+    background-color: rgb(54, 54, 54);
+}
+.footing_message{
+    height: 60px;
+    padding: 5px;
+}
+.copyright{
+    height: 30px;
+    color: #ffffff;
+    padding-top: 5px;
+    text-align: center;
+    border-top: 1px solid;
+}

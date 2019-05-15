@@ -1,0 +1,74 @@
+.body {
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    min-height: 650px;
+    background-color: rgba(134, 133, 133, 0.73);
+    box-shadow: 20px 20px 30px rgba(16, 18, 21, 0.76);
+}
+.title{
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: "Arial Black";
+    font-weight: 800;
+    color: #0000af;
+    text-align: center;
+}
+.album_name{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-family: "Adobe 仿宋 Std R";
+    font-weight: 600;
+    color: #000000;
+    text-align: left;
+}
+.pics_container{
+    border-radius: 10px;
+    border: 2px solid;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    -webkit-column-gap: 0px;
+    column-gap: 0px;
+}
+.pics img{
+    height: auto;
+    border-radius: 15px;
+    margin: 10px auto;
+}
+.pics p{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: "Adobe 黑体 Std R";
+}
+/*media 1st*/
+@media screen and (min-width: 1150px){
+    .body {
+        width: 1100px;
+    }
+    .pics_container{
+        padding-left: 10px;
+        column-width: 260px;
+        -webkit-column-width: 260px;
+    }
+    .pics img{
+        width: 260px;
+    }
+    
+}
+/*media 2ed*/
+@media screen and (max-width: 1150px){
+    .body {
+        width: 800px;
+    }
+    .pics_container{
+        padding-left: 15px;
+        column-width: 250px;
+        -webkit-column-width: 250px;
+    }
+    .pics img{
+        width: 250px;
+    }
+    
+}
