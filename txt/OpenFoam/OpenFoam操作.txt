@@ -1,0 +1,16 @@
+﻿×××
+复制算例
+到case文件夹，运行
+foamCloneCase
+
+
+
+×××
+并行计算
+先使用blockMesh(topoSet,snappyHexMesh)等工具划分好网格，再运行
+decomposePar
+mpirun -np NoProcess solvername -parallel > log &
+其中> log &表示将运行过程输出到log文件并后台运行（参考Ubuntu常用命令总结）
+reconstructPar -newTimes
+-newTimes参数表示从已经合并好的时间步之后开始执行，而不用重新从头执行
+
