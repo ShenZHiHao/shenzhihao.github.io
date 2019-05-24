@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33632ab8-c5d3-45aa-ad8f-b973f4b722ed" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/My_Research.css" afterPath="$PROJECT_DIR$/css/My_Research.css" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" afterPath="$PROJECT_DIR$/css/index.css" />
-      <change beforePath="$PROJECT_DIR$/html/My_Gallery.html" afterPath="$PROJECT_DIR$/html/My_Gallery.html" />
-      <change beforePath="$PROJECT_DIR$/img/DEM_simulation.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/html/Sorting.html" afterPath="$PROJECT_DIR$/html/Sorting.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +14,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="156">
               <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sorting.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/Sorting.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="145">
+              <caret line="5" column="71" lean-forward="false" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -98,7 +103,6 @@
         <option value="$PROJECT_DIR$/css/My_Audios.css" />
         <option value="$PROJECT_DIR$/css/My_Story.css" />
         <option value="$PROJECT_DIR$/css/Sorting.css" />
-        <option value="$PROJECT_DIR$/html/Sorting.html" />
         <option value="$PROJECT_DIR$/css/General_Settings.css" />
         <option value="$PROJECT_DIR$/html/My_Stories.html" />
         <option value="$PROJECT_DIR$/html/My_Emojis.html" />
@@ -112,6 +116,7 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/index.css" />
         <option value="$PROJECT_DIR$/html/Blank.html" />
+        <option value="$PROJECT_DIR$/html/Sorting.html" />
       </list>
     </option>
   </component>
@@ -129,8 +134,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-55" />
-    <option name="y" value="61" />
+    <option name="x" value="427" />
+    <option name="y" value="139" />
     <option name="width" value="1936" />
     <option name="height" value="1038" />
   </component>
@@ -362,15 +367,15 @@
       <workItem from="1557904708009" duration="2697000" />
       <workItem from="1557998240106" duration="252000" />
       <workItem from="1558256034333" duration="1798000" />
-      <workItem from="1558721927126" duration="2004000" />
+      <workItem from="1558721927126" duration="2323000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177692000" />
+    <option name="totallyTimeSpent" value="178011000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-55" y="61" width="1936" height="1038" extended-state="0" />
+    <frame x="427" y="139" width="1936" height="1038" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -587,13 +592,6 @@
     <entry file="file://$PROJECT_DIR$/css/My_Galleries.css" />
     <entry file="file://$PROJECT_DIR$/css/My_Audios.css" />
     <entry file="file://$PROJECT_DIR$/css/My_Story.css" />
-    <entry file="file://$PROJECT_DIR$/html/Sorting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="88" column="36" lean-forward="false" selection-start-line="88" selection-start-column="36" selection-end-line="88" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/Sorting.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
@@ -686,6 +684,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/Sorting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="5" column="71" lean-forward="false" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
           <folding />
         </state>
       </provider>
