@@ -36,6 +36,16 @@
     font-size: 20px;
     line-height: 40px;
 }
+.blog_name{
+    font-family: Arial;
+    height: 70px;
+    padding-top: 20px;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+}
 /*media 1st*/
 @media screen and (min-width: 1150px){
     .body {
