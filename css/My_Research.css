@@ -3,22 +3,18 @@
     margin-top: 20px;
     margin-bottom: 40px;
     min-height: 650px;
-    background-color: rgba(134, 133, 133, 0.95);
+    background-color: rgba(175, 174, 174, 0.95);
     box-shadow: 20px 20px 30px rgba(10, 10, 10, 0.8);
 }
-.title_0{
-    font-size: 40px;
-    font-family: 微软雅黑;
+.article_title{
+    font-size: 25px;
     font-weight: 800;
-    color: #0000af;
-    text-align: center;
 }
-.title_1{
-    font-size: 30px;
-    font-family: 微软雅黑;
-    font-weight: 600;
-    color: #0000af;
+.article_contant{
     text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 6px 20px;
 }
 .blog_name{
     font-family: Arial;
@@ -37,8 +33,18 @@
         min-height: 1700px
     }
     .body_container{
+        padding-top: 10px;
         width: 1000px;
         min-height: 1700px
+    }
+    .article{
+        text-align: center;
+        width: 950px;
+        border: 4px solid #000000;
+        border-radius: 20px;
+        margin: 10px auto;
+        padding: 10px 0px;
+        background-color: rgba(200, 200, 200, 0.8);
     }
 }
 /*media 2ed*/
@@ -48,7 +54,17 @@
         min-height: 1700px
     }
     .body_container{
+        padding-top: 10px;
         width: 720px;
         min-height: 1700px
+    }
+    .article{
+        text-align: center;
+        width: 520px;
+        border: 4px solid #000000;
+        margin: 10px auto;
+        padding: 10px 0px;
+        border-radius: 30px;
+        background-color: rgba(200, 200, 200, 0.8);
     }
 }
