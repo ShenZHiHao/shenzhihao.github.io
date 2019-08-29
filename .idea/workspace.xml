@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="33632ab8-c5d3-45aa-ad8f-b973f4b722ed" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/CFD.css" afterPath="$PROJECT_DIR$/css/CFD.css" />
-      <change beforePath="$PROJECT_DIR$/css/My_Research.css" afterPath="$PROJECT_DIR$/css/My_Research.css" />
-      <change beforePath="$PROJECT_DIR$/html/CFD.html" afterPath="$PROJECT_DIR$/html/CFD.html" />
-      <change beforePath="$PROJECT_DIR$/html/My_Research.html" afterPath="$PROJECT_DIR$/html/My_Research.html" />
-    </list>
+    <list default="true" id="33632ab8-c5d3-45aa-ad8f-b973f4b722ed" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -397,12 +391,12 @@
       <workItem from="1558721927126" duration="2347000" />
       <workItem from="1566644702595" duration="774000" />
       <workItem from="1566645756541" duration="689000" />
-      <workItem from="1566997279732" duration="9097000" />
+      <workItem from="1566997279732" duration="9120000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188595000" />
+    <option name="totallyTimeSpent" value="188618000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
